@@ -4,22 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Is your birthday lucky? </title>
 </head>
 <body>
     <div class="container">
         <h1>Is your Birthday Lucky?</h1>
-        <label for="date-of-birth">Date of Birth: </label>
-        <input id="date-of-birth" type="date">
-    
-        <label for="lucky-number">Lucky Number</label>
-        <input id="lucky-number" type="number">
-    
-        <button id="check-number">Check Number</button>
-    </div>
 
+        <form>
+            <label for="date-of-birth">Date of Birth: </label>
+            <input id="date-of-birth" type="date" required>
+        
+            <label for="lucky-number">Lucky Number</label>
+            <input id="lucky-number" type="number" required>
+        
+            
+        </form>
+        
+        <button id="check-number">Check Number</button>
+        
+        <div id="textOutput">
+            <textarea placeholder="Output will be shown here!" name="output" id="output" cols="30" rows="5" disabled></textarea>
+        </div>
+           
+
+    </div>
+    <script type="text/javascript" src="index.js"></script>
     
 </body>
 
-<script type="text/javascript" src="index.js"></script>
+
 </html>
