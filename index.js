@@ -26,16 +26,22 @@ function isBirthdatLucky(sum) {
 }
 
 checkNumber.addEventListener("click", function() {
+
+
     const modifiedDate = dateOfBirth.value.replaceAll("-","");
-    console.log(modifiedDate);
+    //console.log(modifiedDate);
     
     let sum = calculateSum(modifiedDate);
-    console.log(sum);
+    //console.log(sum);
+    if(modifiedDate && sum) {
+        isBirthdatLucky(sum);
+    } else {
+        output.innerText = "Enter both the values";
+    }
 
-
-    isBirthdatLucky(sum);
+    
     
 
-    console.log("Button clicked");
+    //console.log("Button clicked");
 })
 
